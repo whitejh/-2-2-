@@ -14,8 +14,188 @@
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
 
 </head>
-<body class ="sidebar-mini sidebar-mini sidebar-collapse">
+<body>
 <div class="wrapper">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- 개발자의 품격 2기 2팀 -->
+        <a href="index3.html" class="brand-link">
+            <span class="brand-text font-weight-light">개발자의 품격 2기 2팀</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a href="#" class="d-block">김목단</a>
+                </div>
+            </div>
+
+            <!-- SidebarSearch Form -->
+            <div class="form-inline">
+                <div class="input-group" data-widget="sidebar-search">
+                    <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-sidebar">
+                            <i class="fas fa-search fa-fw"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- /.login-logo -->
+                    <div class="card col-md-12">
+                        <div class="card-body login-card-body" >
+                            <form action="../../index3.html" method="post">
+                                <div class="input-group mb-3">
+                                    <!-- <input type="email" class="form-control" placeholder="아이디"> -->
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-envelope"></span>
+                                        </div>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="아이디">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <!-- <input type="password" class="form-control" placeholder="비밀번호"> -->
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-lock"></span>
+                                        </div>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="비밀번호">
+                                </div>
+                                <div class="row">
+                                    <!-- /.col -->
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="btn btn-primary btn-block">로그인</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="btn btn-default btn-block">회원가입</button>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                            </form>
+
+                            <div class="social-auth-links row">
+                                <a href="#" class="btn btn-block btn-primary col-sm-3">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-block btn-danger col-sm-3">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="btn btn-block btn-success col-sm-3">N</a>
+                                <a href="#" class="btn btn-block btn-warning col-sm-3">K</a>
+                            </div>
+                            <!-- /.social-auth-links -->
+                            <a class ="text-center text-xs" href="./pages/examples/forgot-password.html">아이디 혹은 비밀번호를 잊어버리셨나요?</a>
+                        </div>
+                        <!-- /.login-card-body -->
+                    </div>
+
+                    <!-- /.login-box -->
+
+                    <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-home"></i>
+                            <p>
+                                홈
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="pages/widgets.html" class="nav-link">
+                            <i class="nav-icon fas fa-users"></i>
+                            <p>
+                                커뮤니티
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="pages/charts/chartjs.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Q & A</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/charts/flot.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>잡담</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="nav-icon fas fa-tv"></i>
+                            <p>
+                                1:1 화상 멘토링
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="webcam.html" class="nav-link active">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>화상채팅방</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="webcam_receive.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>수신 현황</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="webcam_post.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>발신 현황</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link"> -->
+                        <a href="pages/gallery.html" class="nav-link">
+                            <i class="nav-icon fas fa-trophy"></i>
+                            <p>
+                                명예의 전당
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="pages/gallery.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>명예의 전당 순위</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/gallery.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>명예의 전당 규칙</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
     <div class="content-wrapper">
         <!-- Content Header-->
         <section class="content-header">
