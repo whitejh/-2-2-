@@ -34,6 +34,7 @@
   <!-- jsGrid -->
   <link rel="stylesheet" href="../plugins/jsgrid/jsgrid.min.css">
   <link rel="stylesheet" href="../plugins/jsgrid/jsgrid-theme.min.css">
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed" data-panel-auto-height-mode="height">
@@ -179,202 +180,146 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- 개발자의 품격 2기 2팀 -->
-    <a href="index3.html" class="brand-link">
+    <a href="#" class="brand-link">
       <span class="brand-text font-weight-light">개발자의 품격 2기 2팀</span>
     </a>
-
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">김준현</a>
-        </div>
-      </div>
-
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- /.login-logo -->
-              <div class="card">
-                <div class="card-body login-card-body" >
-                  <p class="login-box-msg">로그인</p>
-  
-                  <form action="../../index3.html" method="post">
-                    <div class="input-group mb-3">
-                      <!-- <input type="email" class="form-control" placeholder="아이디"> -->
-                      <div class="input-group-append">
-                        <div class="input-group-text">
-                          <span class="fas fa-envelope"></span>
-                        </div>
+          <!-- /.login-logo -->
+          <div class="card col-md-12">
+            <div class="card-body login-card-body" >
+                <form action="../../index3.html" method="post">
+                  <div class="input-group mb-3">
+                  <!-- <input type="email" class="form-control" placeholder="아이디"> -->
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-envelope"></span>
                       </div>
-                      <input type="email" class="form-control" placeholder="아이디">
                     </div>
-
-                    <div class="input-group mb-3">
-                      <!-- <input type="password" class="form-control" placeholder="비밀번호"> -->
-                      <div class="input-group-append">
-                        <div class="input-group-text">
-                          <span class="fas fa-lock"></span>
-                        </div>
+                    <input type="email" class="form-control" placeholder="아이디">
+                  </div>
+                  <div class="input-group mb-3">
+                  <!-- <input type="password" class="form-control" placeholder="비밀번호"> -->
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
                       </div>
-                      <input type="password" class="form-control" placeholder="비밀번호">
                     </div>
-                    <div class="row">
-                      <div class="col-8">
-                        <div class="icheck-primary">
-                          <input type="checkbox" id="remember">
-                          <label for="remember">
-                            관리자
-                          </label>
-                        </div>
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">로그인</button>
-                      </div>
-                      <!-- /.col -->
+                    <input type="password" class="form-control" placeholder="비밀번호">
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <button type="submit" class="btn btn-primary btn-block">로그인</button>
                     </div>
-                  </form>
-                
-                  <div class="social-auth-links text-center mb-3">
-                    <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-primary">
-                      <i class="fab fa-facebook mr-2"></i> Facebook으로 로그인
-                    </a>
-                    <a href="#" class="btn btn-block btn-danger">
-                      <i class="fab fa-google-plus mr-2"></i> Google로 로그인
-                    </a>
-                    <a href="#" class="btn btn-block btn-success">
-                      Naver로 로그인
-                    </a>
-                    <a href="#" class="btn btn-block btn-warning">
-                      Kakao로 로그인
-                    </a>
+                    <div class="col-sm-6">
+                      <button type="submit" class="btn btn-default btn-block">회원가입</button>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                </form>
+                <div class="social-auth-links row">
+                  <a href="#" class="btn btn-block btn-primary col-sm-3">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-block btn-danger col-sm-3">
+                    <i class="fab fa-google-plus"></i>
+                  </a>
+                  <a href="#" class="btn btn-block btn-success col-sm-3">N</a>
+                  <a href="#" class="btn btn-block btn-warning col-sm-3">K</a>
                   </div>
                   <!-- /.social-auth-links -->
-                
-                  <p class="mb-1">
-                    <a href="./pages/examples/forgot-password.html">아이디 혹은 비밀번호를 잊어버리셨나요?</a>
-                  </p>
-                  <p class="mb-0">
-                    <a href="./pages/examples/register.html" class="text-center">회원가입</a>
-                  </p>
+                  <a class ="text-center text-xs" href="./pages/examples/forgot-password.html">아이디 혹은 비밀번호를 잊어버리셨나요?</a>
                 </div>
-                <!-- /.login-card-body -->
-              </div>
-          
-            <!-- /.login-box -->
-
+              <!-- /.login-card-body -->
+            </div>
+          <!-- /.login-box -->
           <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="./main.html" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                홈 
-              </p>
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-home"></i>
+              <p>홈</p>
             </a>
           </li>
-
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                <!-- <span class="right badge badge-danger">개발자</span> -->
-                커뮤니티
+            <a href="pages/community.html" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>커뮤니티
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="pages/community_qa.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Q & A</p>
+                    <p>Q & A</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="pages/community_board.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>잡담</p>
+                    <p>잡담</p>
                 </a>
               </li>
             </ul>
           </li>
-
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                1:1 화상 멘토링
-                <i class="right fas fa-angle-left"></i>
-              </p>
+              <i class="nav-icon fas fa-tv"></i>
+                <p>1:1 화상 멘토링
+                  <i class="right fas fa-angle-left"></i>
+                </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./webcam.html" class="nav-link">
+                <a href="webcam.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>화상채팅방</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./webcam_receive.html" class="nav-link">
+                <a href="webcam_receive.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>수신 현황</p>
+                    <p>수신 현황</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./webcam_post.html" class="nav-link">
+                <a href="webcam_post.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>발신 현황</p>
+                    <p>발신 현황</p>
                 </a>
               </li>
             </ul>
           </li>
-
           <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tv"></i>
-              <p>
-                명예의 전당
-                <i class="right fas fa-angle-left"></i>
+            <!-- <a href="#" class="nav-link"> -->
+            <a href="pages/honor.html" class="nav-link">
+              <i class="nav-icon fas fa-trophy"></i>
+                <p>명예의 전당
+                <i class="fas fa-angle-left right"></i>
               </p>
-            <a/>
-
+            </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="pages/honor.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>포인트 순</p>
+                  <p>명예의 전당 순위</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="pages/honor.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>답변 순</p>
+                  <p>명예의 전당 규칙</p>
                 </a>
               </li>
             </ul>
           </li>
       </nav>
       <!-- /.sidebar-menu -->
-    </div>
     <!-- /.sidebar -->
-  </aside>
+</aside>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -385,12 +330,12 @@
           <div class="col-sm-6">
             <h1>명예의 전당</h1>
           </div>
-          <!-- <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
+          <div class="col-sm-6">
+            <!-- <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item">포인트 순</li>
               <li class="breadcrumb-item active">답변 순</li>
-            </ol>
-          </div> -->
+            </ol> -->
+          </div>
         </div>
       </div>
     </section>
@@ -431,7 +376,11 @@
                                   <tbody>
                                     <tr>
                                       <td><h3>1</h3></td>
-                                      <td><a href="webcam_detail.html">User1</a></td>
+                                      <td><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                          User
+                                        </button>
+
+                                        <a href="webcam_detail.html">User1</a></td>
                                       <td>200</td>
                                       <td>
                                         <button type="button" class="btn btn-block btn-success">10</button>
@@ -479,7 +428,7 @@
                                 </table>
                               </div>
 
-                              <div class="active tab-pane pade" id="answer">
+                              <div class="tab-pane pade" id="answer">
                                 <table class="table table-bordered">
                                   <thead>
                                     <tr>
@@ -506,7 +455,6 @@
                                       <td>20</td>
                                       <td>
                                         <button type="button" class="btn btn-block btn-primary">40</button>
-                                      
                                       </td>
                                       <td>Java</td>
                                     </tr>
@@ -602,5 +550,9 @@
 <script src="../dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
+
+<script>
+
+</script>
 </body>
 </html>
