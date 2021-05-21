@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.card-box-size {
+    width: 1000px;
+}
+
+.card-box-location {
+    display: flex;
+    justify-content: center;
+}
+
+.contents-box {
+    white-space: normal;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-right-box {
+    display: flex;
+}
+
+.horizontal-alignment {
+    display: flex;
+}
+
+.horizontal-alignment>p {
+    font-size: small;
+}
+
+.vertical-center-alignment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.vertical-right-alignment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.vertical-bottom-alignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.register-title {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+
+.button-box>button {
+    margin-right: 15px;
+}
