@@ -6,8 +6,1525 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+    <!— fontawsome —>
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!— Theme style —>
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+
 </head>
 <body>
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="index3.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
 
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <li class="nav-item">
+                <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                    <i class="fas fa-search"></i>
+                </a>
+                <div class="navbar-search-block">
+                    <form class="form-inline">
+                        <div class="input-group input-group-sm">
+                            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-comments"></i>
+                    <span class="badge badge-danger navbar-badge">3</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Brad Diesel
+                                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">Call me whenever you can...</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    John Pierce
+                                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">I got your message bro</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <!-- Message Start -->
+                        <div class="media">
+                            <img src="../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <div class="media-body">
+                                <h3 class="dropdown-item-title">
+                                    Nora Silvester
+                                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                </h3>
+                                <p class="text-sm">The subject goes here</p>
+                                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                            </div>
+                        </div>
+                        <!-- Message End -->
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell"></i>
+                    <span class="badge badge-warning navbar-badge">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <span class="dropdown-item dropdown-header">15 Notifications</span>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-envelope mr-2"></i> 4 new messages
+                        <span class="float-right text-muted text-sm">3 mins</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-users mr-2"></i> 8 friend requests
+                        <span class="float-right text-muted text-sm">12 hours</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-file mr-2"></i> 3 new reports
+                        <span class="float-right text-muted text-sm">2 days</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                    <i class="fas fa-th-large"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- 개발자의 품격 2기 2팀 -->
+        <a href="#" class="brand-link">
+            <span class="brand-text font-weight-light">개발자의 품격 2기 2팀</span>
+        </a>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- /.login-logo -->
+                    <div class="card col-md-12">
+                        <div class="card-body login-card-body" >
+                            <form action="../../index3.html" method="post">
+                                <div class="input-group mb-3">
+                                    <!-- <input type="email" class="form-control" placeholder="아이디"> -->
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-envelope"></span>
+                                        </div>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="아이디">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <!-- <input type="password" class="form-control" placeholder="비밀번호"> -->
+                                    <div class="input-group-append">
+                                        <div class="input-group-text">
+                                            <span class="fas fa-lock"></span>
+                                        </div>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="비밀번호">
+                                </div>
+                                <div class="row">
+                                    <!-- /.col -->
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="btn btn-primary btn-block">로그인</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="btn btn-default btn-block">회원가입</button>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                            </form>
+
+                            <div class="social-auth-links row">
+                                <a href="#" class="btn btn-block btn-primary col-sm-3">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-block btn-danger col-sm-3">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="btn btn-block btn-success col-sm-3">N</a>
+                                <a href="#" class="btn btn-block btn-warning col-sm-3">K</a>
+                            </div>
+                            <!-- /.social-auth-links -->
+                            <a class ="text-center text-xs" href="./pages/examples/forgot-password.html">아이디 혹은 비밀번호를 잊어버리셨나요?</a>
+                        </div>
+                        <!-- /.login-card-body -->
+                    </div>
+
+                    <!-- /.login-box -->
+
+                    <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-home"></i>
+                            <p>
+                                홈
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="pages/widgets.html" class="nav-link">
+                            <i class="nav-icon fas fa-users"></i>
+                            <p>
+                                커뮤니티
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="pages/charts/chartjs.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Q & A</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/charts/flot.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>잡담</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-tv"></i>
+                            <p>
+                                1:1 화상 멘토링
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="webcam.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>화상채팅방</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="webcam_receive.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>수신 현황</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="webcam_post.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>발신 현황</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <!-- <a href="#" class="nav-link"> -->
+                        <a href="pages/gallery.html" class="nav-link">
+                            <i class="nav-icon fas fa-trophy"></i>
+                            <p>
+                                명예의 전당
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="pages/gallery.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>명예의 전당 순위</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/gallery.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>명예의 전당 규칙</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper">
+        <!-- Content Header-->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <h1>마이페이지</h1>
+                </div>
+                <div class="col-sm-9">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            마이페이지
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--Main content-->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="col">
+                    <div class="col-md-3">
+                        <!-- Profile Image -->
+                        <div class="card card-primary card-outline">
+                            <div class="card-body box-profile">
+                                <div class="text-center">
+                                    <img class="profile-user-img img-fluid img-circle" src="#" alt="User profile picture">
+                                </div>
+                                <h3 class="profile-username text-center">Test</h3>
+                                <p class="text-muted text-center">프론트엔드</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-header p-2">
+                                <div class="nav nav-pills nav-fill">
+                                        <a class="nav-link active" href="#settings" data-toggle="tab">개인정보수정</a>
+                                        <a class="nav-link" href="#activelist" data-toggle="tab">활동목록</a>
+                                        <a class="nav-link" href="#scraplist" data-toggle="tab">스크랩목록</a>
+                                        <a class="nav-link" href="#messagebox" data-toggle="tab">쪽지함</a>
+                                        <a class="nav-link" href="#pointlist" data-toggle="tab">포인트조회</a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <!-- 개인정보 수정-->
+                                    <div class="active tab-pane pade" id="settings">
+                                        <form class="form-horizontal">
+                                            <div class="form-group row">
+                                                <label for="inputNickname" class="col-sm-2 col-form-label">닉네임</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="inputNickname" placeholder="닉네임">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <button type="submit" class="btn-sm btn-default">닉네임 확인</button>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputInterest" class="col-sm-2 col-form-label">관심분야</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="inputInterest" placeholder="관심분야">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPasswordConfirm" class="col-sm-2 col-form-label">패스워드 확인</label>
+                                                <div class="col-sm-8">
+                                                    <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="패스워드 확인">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="offset-sm-5">
+                                                    <button type="submit" class="btn-sm btn-danger">변경하기</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- 활동목록 -->
+                                    <!-- 활동목록 id변경여부 확인-->
+                                    <div class="tab-pane fade" id="activelist">
+                                        <div class="card card-primary card-outline">
+                                            <div class="card-header">
+                                                <h3 class="card-title">내가 쓴 글</h3>
+                                                <div class="card-tools">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" class="form-control" placeholder="찾기">
+                                                        <div class="input-group-append">
+                                                            <div class="btn btn-primary">
+                                                                <i class="fas fa-search"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <div class="scrap-controls">
+                                                    <div class="float-right">
+                                                        1-20/200
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive scrap-subjectlist">
+                                                    <table class="table table-hover table-striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="text-center">번  호</th>
+                                                                <th class="text-center">스크랩</th>
+                                                                <th class="text-center">제  목</th>
+                                                                <th class="text-center">날  짜</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    1
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    2
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    3
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    4
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    5
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    6
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    7
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    8
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    9
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    10
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    11
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    12
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    13
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    14
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    15
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    16
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    17
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    18
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    19
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="board-number text-center">
+                                                                    20
+                                                                </td>
+                                                                <td class="board-scrap text-center">
+                                                                    <a href="#">
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="board-subject text-center">
+                                                                    "테스트1"
+                                                                </td>
+                                                                <td class="board-date text-center"> 2000/00/00</td>
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                                <div class="board-controls">
+                                                    <div class="float-right">
+                                                        1-20/200
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 스크랩 -->
+                                    <div class="tab-pane fade" id="scraplist">
+                                        <div class="card card-primary card-outline">
+                                            <div class="card-header">
+                                                <h3 class="card-title">스크랩</h3>
+                                                <div class="card-tools">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" class="form-control" placeholder="찾기">
+                                                        <div class="input-group-append">
+                                                            <div class="btn btn-primary">
+                                                                <i class="fas fa-search"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <div class="scrap1-controls">
+                                                    <div class="float-right">
+                                                        1-20/200
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive scrap-subjectlist">
+                                                    <table class="table table-hover table-striped">
+                                                        <tbody>
+                                                        <tr>
+                                                            <th class="text-center">번  호</th>
+                                                            <th class="text-center">스크랩</th>
+                                                            <th class="text-center">아이디</th>
+                                                            <th class="text-center">제  목</th>
+                                                            <th class="text-center">날  짜</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="scrap-number text-center">
+                                                                1
+                                                            </td>
+                                                            <td class="scrap-scrap text-center">
+                                                                <a href="#">
+                                                                    <i class="fas fa-star text-warning"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td class="scrap-id text-center">
+                                                                testID
+                                                            </td>
+                                                            <td class="scrap-subject text-center">
+                                                                "테스트1"
+                                                            </td>
+                                                            <td class="scrap-date text-center"> 2000/00/00</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                                <div class="scrap-controls">
+                                                    <div class="float-right">
+                                                        1-20/200
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-default btn-sm">
+                                                                <i class="fas fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 쪽지함 -->
+                                    <div class="tab-pane fade" id="messagebox">
+                                        <div class="card card-primary card-outline">
+                                            <div class="card-header">
+                                                <div class="card-body p-0">
+                                                    <ul class="nav nav-pills flex-row">
+                                                        <li class="nav-item active">
+                                                            <a href="#" class="nav-link">
+                                                                <i class="fas fa-inbox"></i> 받은 쪽지함
+                                                                <span class="badge bg-primary float-right">12</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link">
+                                                                <i class="far fa-envelope"></i> 보낸 쪽지함
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-tools">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" class="form-control" placeholder="검색">
+                                                        <div class="input-group-append">
+                                                            <div class="btn btn-primary">
+                                                                <i class="fas fa-search"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <div class="messagebox-controls">
+                                                    <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="far fa-square"></i>
+                                                    </button>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default btn-sm"><i class="far fa-trash-alt"></i></button>
+                                                        <button type="button" class="btn btn-default btn-sm"><i class="fas fa-reply"></i></button>
+                                                        <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i></button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-default btn-sm"><i class="fas fa-sync-alt"></i></button>
+                                                    <div class="float-right">
+                                                        1-50/200
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-left"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-right"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive messagebox-messages">
+                                                    <table class="table table-hover table-striped">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check1">
+                                                                    <label for="check1"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">5 mins ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check2">
+                                                                    <label for="check2"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">28 mins ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check3">
+                                                                    <label for="check3"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">11 hours ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check4">
+                                                                    <label for="check4"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">15 hours ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check5">
+                                                                    <label for="check5"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">Yesterday</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check6">
+                                                                    <label for="check6"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">2 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check7">
+                                                                    <label for="check7"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">2 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check8">
+                                                                    <label for="check8"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">2 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check9">
+                                                                    <label for="check9"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">2 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check10">
+                                                                    <label for="check10"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">2 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check11">
+                                                                    <label for="check11"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">4 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check12">
+                                                                    <label for="check12"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">12 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check13">
+                                                                    <label for="check13"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star-o text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">12 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check14">
+                                                                    <label for="check14"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">14 days ago</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="icheck-primary">
+                                                                    <input type="checkbox" value="" id="check15">
+                                                                    <label for="check15"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td class="messagebox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                                                            <td class="messagebox-name"><a href="#">Alexander Pierce</a></td>
+                                                            <td class="messagebox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this problem...
+                                                            </td>
+                                                            <td class="messagebox-date">15 days ago</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                                <div class="messagebox-controls">
+                                                    <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="far fa-square"></i>
+                                                    </button>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-default btn-sm"><i class="far fa-trash-alt"></i></button>
+                                                        <button type="button" class="btn btn-default btn-sm"><i class="fas fa-reply"></i></button>
+                                                        <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i></button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-default btn-sm"><i class="fas fa-sync-alt"></i></button>
+                                                    <div class="float-right">
+                                                        1-50/200
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-left"></i></button>
+                                                            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-right"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 포인트조회 -->
+                                    <div class="tab-pane fade" id="pointlist">
+                                        <div class="card card-primary card-outline">
+                                            <div class="card-header">
+                                                <h3 class="card-title">포인트조회</h3>
+                                                <div class="card-tools">
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <div class="table-responsive pointlist">
+                                                    <table class="table table-hover table-striped">
+                                                        <tbody>
+                                                        <tr>
+                                                            <th class="text-center">포인트</th>
+                                                            <th class="text-center">내  용</th>
+                                                            <th class="text-center">날  짜</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="pointlist-point text-center">
+                                                                +500
+                                                            </td>
+                                                            <td class="pointlist-conten text-center">
+                                                                로그인 +500(총 50번)
+                                                            </td>
+                                                            <td class="pointlist-date text-center">
+                                                                2000/00/00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="pointlist-point text-center">
+                                                                +100
+                                                            </td>
+                                                            <td class="pointlist-conten text-center">
+                                                                게시글작성 +100(총 10번)
+                                                            </td>
+                                                            <td class="pointlist-date text-center">
+                                                                2000/00/00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="pointlist-point text-center">
+                                                                +50
+                                                            </td>
+                                                            <td class="pointlist-conten text-center">
+                                                                댓글 +50(총 50번)
+                                                            </td>
+                                                            <td class="pointlist-date text-center">
+                                                                2000/00/00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="pointlist-point text-center">
+                                                                +500
+                                                            </td>
+                                                            <td class="pointlist-conten text-center">
+                                                                1:1멘토링 +500(총 50번)
+                                                            </td>
+                                                            <td class="pointlist-date text-center">
+                                                                2000/00/00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="pointlist-point text-center">
+                                                                +500
+                                                            </td>
+                                                            <td class="pointlist-conten text-center">
+                                                                추천 +500(총 100번)
+                                                            </td>
+                                                            <td class="pointlist-date text-center">
+                                                                2000/00/00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="pointlist-sum text-center">합계 </th>
+                                                            <th class="pointlist-sumvalue text-center">
+                                                                +1650
+                                                            </th>
+                                                            <th class="pointlist-date text-center">
+                                                                2000/00/00
+                                                            </th>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Thema style -->
+<script src="../dist/js/adminlte.min.js"></script>
 </body>
 </html>
