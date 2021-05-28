@@ -1,43 +1,76 @@
 @charset "utf-8";
 
+.community-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.community-select>form {
+    margin-right: 25px;
+}
 
+.community-select>div {
+    margin-right: 25px;
+}
 
+.community-select-box {
+    width: 150px;
+    padding-top: 16px;
+}
 
+.paging {
+    display: flex;
+    justify-content: center;
+}
 
+.time-user-box {
+    display: flex;
+    float: right;
+}
 
+.time-content {
+    margin-right: 20px;
+}
 
+.table-box-size {
+    display:flex;
+    justify-content: center;
+}
 
+.card-box-size {
+    width: 1000px;
+}
 
+.card-box-location {
+    display:flex;
+    justify-content: center;
+}
 
+.icon-box {
+    display: flex;
+    align-items: center;
+}
 
+.icon-box>i {
+    margin-right: 10px;
+}
 
+.icon-box>p {
+    padding-top: 12px;
+}
 
+body {
+    overflow-x: hidden;
+}
 
+.card-body {
+    overflow-x: hidden;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.community-contents {
+    width: 850px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
