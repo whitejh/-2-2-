@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>커뮤니티</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -26,7 +26,7 @@
   <!-- summernote -->
   <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
 
-  <link rel="stylesheet" href="../css/community/community_qa.css">
+  <link rel="stylesheet" href="../css/community/community.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -177,7 +177,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- 개발자의 품격 2기 2팀 -->
-      <a href="index3.html" class="brand-link">
+      <a href="main.html" class="brand-link">
         <span class="brand-text font-weight-light">개발자의 품격 2기 2팀</span>
       </a>
 
@@ -210,70 +210,56 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- /.login-logo -->
             <div class="card" style="width: 100%;">
-              <div class="card-body login-card-body">
-                <p class="login-box-msg">로그인</p>
-
-                <form action="../../index3.html" method="post">
-                  <div class="input-group mb-3">
-                    <div class="input-group-append">
-                      <div class="input-group-text">
-                        <span class="fas fa-envelope"></span>
-                      </div>
-                    </div>
-                    <input type="email" class="form-control" placeholder="아이디">
-                  </div>
-
-                  <div class="input-group mb-3">
-                    <div class="input-group-append">
-                      <div class="input-group-text">
-                        <span class="fas fa-lock"></span>
-                      </div>
-                    </div>
-                    <input type="password" class="form-control" placeholder="비밀번호">
-                  </div>
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="icheck-primary">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">
-                          관리자
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <button type="submit" class="btn btn-primary btn-block">로그인</button>
-                    </div>
-                  </div>
-                </form>
-
-                <div class="social-auth-links text-center mb-3">
-                  <p>- OR -</p>
-                  <a href="#" class="btn btn-block btn-primary">
-                    <i class="fab fa-facebook mr-2"></i> Facebook으로 로그인
-                  </a>
-                  <a href="#" class="btn btn-block btn-danger">
-                    <i class="fab fa-google-plus mr-2"></i> Google로 로그인
-                  </a>
-                  <a href="#" class="btn btn-block btn-success">
-                    Naver로 로그인
-                  </a>
-                  <a href="#" class="btn btn-block btn-warning">
-                    Kakao로 로그인
-                  </a>
-                </div>
-                <!-- /.social-auth-links -->
-
-                <p class="mb-1">
-                  <a href="../pages/examples/forgot-password.html"
-                    style="display: block; width: 100%; font-size: 15px; color: brown; text-align: center;">아이디 혹은 비밀번호를
-                    잊어버리셨나요?</a>
-                </p>
-                <p class="mb-0">
-                  <a href="join.html"
-                    style="display: block; width: 100%; font-size: 15px; color: brown; text-align: center;"
-                    class="text-center">회원가입</a>
-                </p>
+              <div class="card-body login-card-body" >
+        <form action="#" method="post">
+          <div class="input-group mb-3">
+            <!-- <input type="email" class="form-control" placeholder="아이디"> -->
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
               </div>
+            </div>
+            <input type="email" class="form-control" placeholder="아이디">
+          </div>
+
+          <div class="input-group mb-3">
+          <!-- <input type="password" class="form-control" placeholder="비밀번호"> -->
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+            <input type="password" class="form-control" placeholder="비밀번호">
+          </div>
+          <div class="row">
+            <!-- /.col -->
+            <div class="col-sm-6">
+              <button type="submit" class="btn btn-primary btn-block">로그인</button>
+            </div>
+            <div class="col-sm-6">
+              <a href="join.html"><button type="button" href="join.html" class="btn btn-default btn-block">회원가입</button></a>
+            </div>
+          <!-- /.col -->
+          </div>
+        </form>
+
+        <div class="social-auth-links row">
+          <div class="btn-group col-md-12">
+            <button type="button" class="btn btn-primary btn-flat col-md-4">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-danger btn-flat col-md-4">
+              <i class="fab fa-google-plus"></i>
+            </button>
+            <button type="button" class="btn btn-success btn-flat col-md-4">
+              <i class="">N</i>
+            </button>
+            <button type="button" class="btn btn-warning btn-flat col-md-4">
+              <i class="">K</i>
+            </button>
+          </div>
+        </div>
+      </div>
               <!-- /.login-card-body -->
             </div>
 
@@ -332,19 +318,27 @@
                     <p>발신 현황</p>
                   </a>
                 </li>
+
+                <li class="nav-item">
+                  <a href="./mypages.html" class="nav-link">
+                    <i class="nav-icon fas fa-tree"></i>
+                    <p>마이페이지</p>  
+                  </a>
+                </li>
               </ul>
             </li>
 
             <li class="nav-item">
               <a href="./honor.html" class="nav-link">
-                <i class="nav-icon fas fa-tree"></i>
+                <i class="nav-icon fas fa-trophy"></i>
                 <p>명예의 전당</p><!-- <span class="right badge badge-danger">인기</span> -->         
               </a>
             </li>
+            
 
             <li class="nav-item">
               <a href="./mypages.html" class="nav-link">
-                <i class="nav-icon fas fa-tree"></i>
+                <i class="nav-icon fas fa-user"></i>
                 <p>마이페이지</p>  
               </a>
             </li>
